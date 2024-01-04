@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+:root{
+    --primary_color: #13005A;
+    --secondary_color: #3795BD;
+    --extra_1: #810CA8;
+    --extra_2: #F4F4F4;
+    --extra_3: #FDFDFD;
+    --family1: 'Playfair Display SC', serif;
+    --family2: 'Raleway', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* hero-section */
+.nav-bar{
+    background-color: var(--primary_color);
+}
+.mobile-nav{
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-nav .hamburger-menu{
+    cursor: pointer;
+}
+.mobile-nav .hamburger-menu .line{
+    width: 25px;
+    height: 3px;
+    background-color: var(--extra_3);
+    margin: 5px 0;
+    border-radius: 2px;
+}
+.mobile-logo{
+    color: var(--extra_3);
+    font-family: var(--family2);
+}
+.mobile-logo h1{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* hero-section */
+.hero-section{
+    background-color: var(--primary_color);
+    color: var(--extra_3);
+}
+.profile-pic img{
+    width: 100%;
+    object-fit: cover;  
+}
+.intro{
+    padding: 10px;
+}
+.intro h1{
+    font-family: var(--family2);
+    font-weight: 700;
+}
+.intro h1 span{
+    display: block;
+    font-size: 1.3rem;
+    /* font-family: var(--family1); */
+}
+.resume a{
+    padding: 10px;
+    padding-top: 8px;
+    background-color: var(--secondary_color);
+    border-radius: 3px;
+    color: var(--extra_3);
+    text-decoration: none;
+    font-size: 1.2rem;
+}

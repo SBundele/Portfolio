@@ -25,13 +25,20 @@
                     <h1>Sourabh Bundele</h1>
                 </div>
             </div>
-            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="bg-dark text-white offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                    <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sourabh Bundele</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                    <ul class="ls d-flex flex-column justify-content-center align-items-center">
+                        <li><a data-bs-dismiss="offcanvas" href="#">Home</a></li>
+                        <li data-bs-dismiss="offcanvas"><a href="#about">About</a></li>
+                        <li data-bs-dismiss="offcanvas"><a href="#skills">Skills</a></li>
+                        <li data-bs-dismiss="offcanvas"><a href="#project">Projects</a></li>
+                        <li data-bs-dismiss="offcanvas"><a  href="#">Contact</a></li>
+                        <li data-bs-dismiss="offcanvas"><a href="#">Resume</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -53,8 +60,83 @@
         </section>
 
         <!-- main -->
-        <main class="main">
+        <main class="main container mt-5 mb-5">
+            <!-- about me -->
+            <section class="about" id="about">
+                <h2 class="sec-heading">About Me</h2>
+                <div class="abt-content mt-3 rounded-2">
+                    <div class="side1 d-none">
+                        <img src="./images/profilePic.jpg" alt="A person with smiling face">
+                    </div>
+                    <div class="side2 p-3">
+                        <p class="m-0 p-0 fs-5">I am currently enrolled in a Career Accelerator Program, focusing on Full Stack Web Development, with a strong foundation in HTML, CSS, Javascript, and Python (Data Structures and Algorithms). My practical experience includes a dynamic 3-month stint as a UI Designer at Integrano Technologies Pvt Ltd, where I honed my design skills and contributed to the user interface development process. Outside the realm of coding, I find joy in indulging my hobbies of sports and reading books. These interests not only provide a well-rounded balance to my tech-centric pursuits but also instill in me a holistic perspective that contributes to my creativity and problem-solving abilities. Excited about the endless possibilities in the tech world, I am committed to continuous learning and growth in the field of web development.</p>
+                    </div>
+                </div>
+            </section>
 
+            <!-- Skills Section -->
+            <section class="skills mt-5" id="skills">
+                <h2 class="sec-heading">Skills</h2>
+                <div class="tech-stack container mt-3">
+                    <h3>Tech Stack</h3>
+                    <div class="flexBox mt-4">
+                        <figure class="tech html">
+                            <img class="img-fluid" src="./images/html-5.png" alt="Html5 logo">
+                            <figcaption>
+                                <p class="text-center">HTML</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="tech css">
+                            <img class="img-fluid" src="./images/css-3.png" alt="CSS Logo">
+                            <figcaption>
+                                <p class="text-center">CSS</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="tech js">
+                            <img class="img-fluid" src="./images/js.png" alt="Javascript logo">
+                            <figcaption>
+                                <p class="text-center">Javascript</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="tech python">
+                            <img class="img-fluid" src="./images/python.png" alt="Python logo">
+                            <figcaption>
+                                <p class="text-center">Python</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <h3>Tools</h3>
+                    <div class="flexBox mt-4">
+                        <figure class="tech vscode">
+                            <img class="img-fluid" src="./images/vscode.png" alt="vscode logo">
+                            <figcaption>
+                                <p class="text-center">VS Code</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="tech git">
+                            <img class="img-fluid" src="./images/git.png" alt="Git Logo">
+                            <figcaption>
+                                <p class="text-center">Git</p>
+                            </figcaption>
+                        </figure>
+
+                        <figure class="tech github">
+                            <img class="img-fluid" src="./images/github.png" alt="github logo">
+                            <figcaption>
+                                <p class="text-center">Github</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project mt-5" id="project">
+                <h2 class="sec-heading">Projects</h2>
+            </section>
         </main>
 
         

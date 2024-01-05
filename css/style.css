@@ -17,6 +17,8 @@
 /* hero-section */
 .nav-bar{
     background-color: var(--primary_color);
+    position: sticky;
+    top: 0;
 }
 .mobile-nav{
     padding: 10px 16px;
@@ -42,7 +44,23 @@
     padding: 0;
     margin: 0;
 }
-
+.btn-close{
+    background-color: white;
+    margin-right: 8px;
+}
+.ls {
+    list-style-type: none;
+    gap: 40px;
+}
+.ls li a{
+    background-color: var(--secondary_color);
+    color: var(--extra_3);
+    font-size: 18px;
+    font-family: var(--family2);
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
 
 
 /* hero-section */
@@ -74,4 +92,39 @@
     color: var(--extra_3);
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+
+/* About */
+.sec-heading{
+    font-family: var(--family1);
+    /* color: var(--secondary_color); */
+    font-weight: 700;
+    text-align: center;
+}
+.abt-content {
+    background-color: var(--secondary_color);
+    color: var(--extra_3);
+    font-family: var(--family2);
+}
+
+
+/* skills */
+.flexBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tech-stack h3{
+    font-family: var(--family1); 
+}
+.tech{
+    width: 35%;
+}
+.tech figcaption p{
+    font-size: 25px;
+    font-family: var(--family2);
+    font-weight: 700;
 }

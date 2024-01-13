@@ -47,6 +47,9 @@ body{
     padding: 0;
     margin: 0;
 }
+.off-canvas{
+    width: 280px !important;   
+}
 .btn-close{
     background-color: white;
     margin-right: 8px;

@@ -113,7 +113,7 @@ body{
     margin: 0 auto 2px;
 }
 .sec-heading div:first-child{
-    width: 120px;
+    width: 125px;
 }
 /* .sec-heading div:last-child{
     width: 80px;
@@ -154,13 +154,16 @@ body{
     width: 35%;
 }
 .tech figcaption p{
-    font-size: 25px;
+    font-size: 23px;
     font-family: var(--family2);
     font-weight: 700;
 }
 
 
 /* Projects */
+.project .sec-heading div:first-child{
+    width: 114px;
+}
 .html-project{
     display: flex;
     flex-direction: column;
@@ -173,7 +176,7 @@ body{
     border: 1px solid lightgray;
     border-radius: 5px;
     background-color: var(--extra_3);
-    transition: 0.6s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 .cards:hover{
     box-shadow: 2px 1px 2px 1px rgb(165, 164, 164);
@@ -199,7 +202,7 @@ body{
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 15px 0
+    padding: 15px 0 0;
 }
 .btns a{
     background-color: #3795BD;

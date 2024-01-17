@@ -289,3 +289,117 @@ body{
 .online-links p a i{
     font-size: 25px;
 }
+
+/* Media Queries */
+@media screen and (min-width:411px) and (max-width: 430px) {
+    .project-cards{
+        padding: 0 35px;
+    }
+}
+
+/* 575 size query */
+@media screen and (min-width: 575px) {
+    .sec-heading div:first-child{
+        width: 135px;
+    }
+    .side1{
+        width: 50%;
+    }
+    .side2 p{
+        font-size: 1.12rem !important;
+    }
+    .flexBox{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .skills .sec-heading div:first-child {
+        width: 88px;
+    }
+    .tech{
+        width: 34%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .tech img{
+        max-width: 70%;
+    }
+    .tech figcaption p{ 
+        font-size: 20px;
+    }
+    .project .sec-heading div:first-child {
+        width: 124px;
+    }
+    .cards{
+        width: 66%;
+    }
+    .contact .sec-heading div:first-child {
+        width: 115px;
+      }
+    .contact-info{
+        width: 65%;
+        margin: 0 auto;
+    }
+    .foot-nav{
+        width: 20%;
+    }
+    .foot-contact{
+        width: 50%;
+    }
+    .foot .flexBox{
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+/* 768 screen size */
+@media screen and (min-width: 768px) {
+    .off-canvas{
+        width: 360px !important;
+    }
+    nav  hr{
+        height: 3px;
+        background-color: #B90AF9;
+        margin: 0;
+    }
+    .hero-section{
+        padding-bottom: 0 !important;
+    }
+    .hero-section .flex{
+        height: 50vh;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .flex .profile-pic{
+        width: 45%;
+        display: flex;
+        justify-content: center;
+    }
+    .flex .intro{
+        width: 49%;
+    }
+    .flex .profile-pic img{
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 50%;
+    }
+    .side1{
+        width: 40%;
+    }
+    .tech{
+        width: 30%;
+    }
+    .tech img{
+        width: 60%;
+    }
+    .html-project{
+        flex-direction: row;
+    }
+    .cards{
+        width: 41.66%;
+    }
+}

@@ -119,9 +119,9 @@ nav hr{
     text-align: center;
 }
 .sec-heading div{
-    background-color: var(--extra_1);
+    background-color: #617676;
     height: 3px;
-    margin: 0 auto 2px;
+    margin: 4px auto 0;
 }
 .sec-heading div:first-child{
     width: 125px;
@@ -230,6 +230,9 @@ nav hr{
 /* contact */
 .contact{
     padding: 0 10px;
+}
+.contact .contact-image{
+    display: none;
 }
 .contact .sec-heading div:first-child{
     width: 104px;
@@ -447,10 +450,14 @@ nav hr{
     }
     .desktop-logo{
         width: 33%;
+    }
+    .desktop-logo h1 a{
+        text-decoration: none;
         color: var(--extra_2);
+        font-family: var(--family1);
     }
     .desktop-nav{
-        width: 60%;
+        width: 66%;
     }
     .desktop-nav ul{
         width: 100%;
@@ -465,6 +472,7 @@ nav hr{
         color: var(--extra_2);
         font-size: 20px;
         font-family: var(--family2);
+        font-weight: 500;
     }
 
     /* hero-section */
@@ -489,6 +497,7 @@ nav hr{
         justify-content: space-evenly;
         align-items: center;
         padding: 10px 20px;
+        background-color: #072b3d;
     }
     .abt-content .side2{
         width: 59%;
@@ -502,12 +511,31 @@ nav hr{
         width: 50%;
     }
 
-    /* contact */
-    .contact-info{
-        transition: 0.6s ease-in-out;
+    /* project */
+    .btns a{
+        background-color: #4c5b62;
     }
-    .contact-info:hover{
-        box-shadow: 3px 3px 2px rgb(49, 87, 85);
+
+    /* contact */
+    .contact .contact-image{
+        display: block;
+    }
+    .contact-content{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+    .contact-content .contact-info{
+        width: 36%;
+        margin: 0;
+        background-color: #072b3d;
+    }
+    .contact-content .contact-image{
+        width: 35%;
+    }
+    .contact-image img{
+        width: 100%;
     }
 
     /* footer */
@@ -516,6 +544,9 @@ nav hr{
     }
     .foot-nav{
         width: 15%;
+    }
+    .foot-nav ul li{
+        line-height: 38px;
     }
     .foot-contact{
         width: 25%;
@@ -575,6 +606,7 @@ nav hr{
     }
     .tech{
         background-color: aliceblue;
+        /* background-color: #b1dfd9; */
         padding: 20px 30px;
     }
     .tech img{
@@ -583,4 +615,14 @@ nav hr{
     .tech figcaption p{
         margin: 0
     }
+
+    /* project */
+    .html-project{
+        row-gap: 40px;
+    }
+    .cards{
+        width: 28.66%;
+    }
+    
+     
 }

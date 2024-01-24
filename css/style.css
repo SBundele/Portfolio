@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 :root{
-    --primary_color: #13005A;
+    --primary_color: #344850;
     --secondary_color: #3795BD;
+    --tertiary-color: #072b3d;
     --extra_1: #810CA8;
     --extra_2: #F4F4F4;
     --extra_3: #FDFDFD;
@@ -64,16 +65,22 @@ body{
 }
 .ls li{
     width: 100%;
-    background-color: var(--secondary_color);
+    /* background-color: var(--secondary_color);
     padding: 10px 20px;
     border-radius: 3px;
-    text-align: center;
+    text-align: center; */
 }
 .ls li a{
+    width: 100%;
+    display: block;
     color: var(--extra_3);
     font-size: 18px;
     font-family: var(--family2);
     text-decoration: none;
+    background-color: var(--secondary_color);
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-align: center;
 }
 nav hr{
     display: none;
@@ -81,15 +88,27 @@ nav hr{
 
 /* hero-section */
 .hero-section{
-    background-color: var(--primary_color);
-    color: var(--extra_3);
+    /* background-color: var(--primary_color);
+    color: var(--extra_3); */
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("../images/hero-image.jpg");
+    background-size: cover;
+    padding-bottom: 0 !important;
+    /* height: 48vh; */
+}
+.profile-pic{
+    width: 200px;
+    height: 200px;
+    margin: 0px auto;
 }
 .profile-pic img{
     width: 100%;
+    height: 100%;
+    border-radius: 50%;
     object-fit: cover;  
 }
 .intro{
     padding: 10px;
+    color: var(--extra_3);
 }
 .intro h1{
     font-family: var(--family2);
@@ -98,18 +117,18 @@ nav hr{
 .intro h1 span{
     display: block;
     font-size: 1.3rem;
-    /* font-family: var(--family1); */
 }
-.resume a{
-    padding: 10px;
-    padding-top: 8px;
+.resume a button{
     background-color: var(--secondary_color);
-    border-radius: 3px;
     color: var(--extra_3);
-    text-decoration: none;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 3px;
     font-size: 1.2rem;
 }
-
+.resume a button:active{
+    background-color: #355b6b;;
+}
 
 /* About */
 .sec-heading{
@@ -131,7 +150,7 @@ nav hr{
     width: 80px;
 } */
 .abt-content {
-    background-color: var(--secondary_color);
+    background-color: var(--tertiary-color);
     color: var(--extra_3);
     font-family: var(--family2);
     padding: 10px 0;
@@ -239,7 +258,7 @@ nav hr{
     width: 104px;
 }
 .contact-info{
-    background-color: var(--secondary_color);
+    background-color: var(--tertiary-color);
     color: var(--extra_3);
     padding: 10px 20px;
     border-radius: 5px;
@@ -317,6 +336,7 @@ nav hr{
         padding: 0 35px;
     }
 }
+
 
 /* 575 size query */
 @media screen and (min-width: 575px) {
@@ -420,16 +440,15 @@ nav hr{
         height: 100%;
     }
     .flex .profile-pic{
-        width: 45%;
+        width: 300px;
+        height: 300px;
         display: flex;
         justify-content: center;
     }
     .flex .intro{
-        width: 49%;
+        width: 56%;
     }
     .flex .profile-pic img{
-        width: 300px;
-        height: 300px;
         margin: 0 auto;
         border-radius: 50%;
         box-shadow: 7px 9px 14px whitesmoke;
@@ -459,6 +478,9 @@ nav hr{
 }
 
 @media screen and (min-width:991.9px) {
+    nav{
+        z-index: 1;
+    }
     .mobile-nav{
         display: none
     }
@@ -494,12 +516,43 @@ nav hr{
         list-style-type: none;
         margin: 0;
     }
+    .desktop-nav li a::before,.desktop-nav li a::after{
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all 0.6s ease;
+        opacity: 0;
+    }
+    .desktop-nav li a::before{
+        right: 0;
+        top: 0;
+        border-top: 3px solid #3acece;
+        border-right: 3px solid #3acece;
+        transform: translate(-100%, 50%);
+    }
+    .desktop-nav li a::after{
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid #3acece;
+        border-left: 3px solid #3acece;
+        transform: translate(100%, -50%);
+    }
+    
+    .desktop-nav li a:hover::before, .desktop-nav li a:hover::after {
+        opacity: 1;
+        transform: translate(0%,10%);
+    }
+  
+
     .desktop-nav ul li a{
+        position: relative;
         text-decoration: none;
         color: var(--extra_2);
         font-size: 20px;
         font-family: var(--family2);
         font-weight: 500;
+        padding: 6px;
     }
 
     /* hero-section */
@@ -510,10 +563,13 @@ nav hr{
         width: 86%;
         margin: 0 auto;
     }
-    .resume a{
+    .resume a button{
         background-color: #344850;
+        transition: 0.2s ease-in-out;
     }
-
+    .resume a button:hover{
+        background-color: #212c31;
+    }
     .main{
         max-width: 88%;
     }
@@ -522,12 +578,41 @@ nav hr{
     .sec-heading span:first-child{
         width: 153px;
     }
+    .about{
+        position: relative;
+    }
     .abt-content{
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         padding: 10px 20px;
         background-color: #072b3d;
+    }
+    .abt-content::before,.abt-content::after{
+        content: '';
+        width: 154px;
+        height: 154px;
+        position: absolute;
+        transition: all 0.6s ease;
+        opacity: 0;
+    }
+    .abt-content::before{
+        left: 0;
+        top: 90px;
+        border-top: 6px solid #3acece;
+        border-left: 6px solid #3acece;
+        transform: translate(100%,70%);
+    }
+    .abt-content::after{
+        right: 0;
+        bottom: 0;
+        border-bottom: 6px solid #3acece;
+        border-right: 6px solid #3acece;
+        transform: translate(-100%,-92%);
+    }
+    .abt-content:hover:after, .abt-content:hover:before{
+        transform: translate(0%,0%);
+        opacity: 1;
     }
     .abt-content .side2{
         width: 59%;
@@ -609,12 +694,13 @@ nav hr{
         width: 80%;
     }
     .flex .profile-pic{
-        width: 42%;
-    }
-    .flex .profile-pic img{
         width: 500px;
         height: 500px;
     }
+    /* .flex .profile-pic img{
+        width: 500px;
+        height: 500px;
+    } */
     .flex .intro{
         width: 56%;
     }
@@ -624,7 +710,7 @@ nav hr{
     .intro h1 span{
         font-size: 2.3rem;
     }
-    .resume a{
+    .resume a button{
         padding: 10px 44px;
         font-size: 1.5rem;
     }

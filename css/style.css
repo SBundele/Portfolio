@@ -195,7 +195,7 @@ nav hr{
 .project .sec-heading span:first-child{
     width: 114px;
 }
-.html-project{
+.html-project, .python-project{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -218,6 +218,14 @@ nav hr{
 .card-img img{
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+.python-project .cards .card-img{
+    width: 100%;
+}
+.python-project .cards .card-img img{
+    object-fit: cover;
+    object-position: top center;
+    width: 100%;
 }
 .card-content{
     padding: 20px 10px;
@@ -331,11 +339,17 @@ nav hr{
 }
 
 /* Media Queries */
+@media screen and (min-width: 319px) and (max-width: 322px) {
+    .contact-info{
+        padding: 10px 10px;
+    }
+}
+
 @media screen and (min-width:411px) and (max-width: 430px) {
     .project-cards{
         padding: 0 35px;
     }
-}
+}   
 
 
 /* 575 size query */
@@ -468,7 +482,7 @@ nav hr{
     }
 
     /* project */
-    .html-project{
+    .html-project, .python-project{
         flex-direction: row;
         justify-content: space-around;
     }
@@ -634,10 +648,22 @@ nav hr{
         width: 142px;
         margin-top: 7px;
     }
+    .card-content:hover{
+        background-color: #344850;
+        color: var(--extra_3);
+    }
     .btns a{
         background-color: #4c5b62;
+        border: 1px solid #4c5b62;
     }
-
+    .card-content:hover .btns a{
+        background-color: transparent;
+        border: 1px solid var(--extra_3);
+    }
+    .btns a:hover{
+        background-color: var(--extra_3) !important;
+        color: #4c5b62;
+    }
     /* contact */
     .contact .sec-heading span:first-child{
         width: 129px;
@@ -754,7 +780,7 @@ nav hr{
     .project .sec-heading span:first-child{
         width: 152px;
     }
-    .html-project{
+    .html-project, .python-project{
         row-gap: 40px;
     }
     .cards{

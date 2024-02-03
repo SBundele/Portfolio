@@ -103,6 +103,7 @@ nav hr{
 .profile-pic img{
     width: 100%;
     height: 100%;
+    border: 1px solid gray;
     border-radius: 50%;
     object-fit: cover;  
 }
@@ -792,3 +793,25 @@ nav hr{
         width: 136px;
     } 
 }
+
+
+
+/* Maze.html */
+.video_section{
+    margin: 30px auto;
+}
+.video_section h1{
+    text-align: center;
+    font-family: var(--family1);
+    padding: 20px 0 ;
+}
+.video_section video{
+    width: 100%;
+}
+
+@media screen and (min-width:411px) and (max-width: 430px){
+    .video_section video{
+        padding: 0 30px ;
+    }
+}
+

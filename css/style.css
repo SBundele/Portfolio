@@ -444,7 +444,7 @@ nav hr{
         background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("../images/hero-image.jpg");
         background-size: cover;
         padding-bottom: 0 !important;
-        height: 48vh;
+        /* height: 48vh; */
     }
     .hero-section .flex{
         display: flex;

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,700;1,400;1,500;1,700&amily=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700display=swap');
 :root{
     --primary_color: #344850;
     --secondary_color: #3795BD;
@@ -8,6 +8,7 @@
     --extra_3: #FDFDFD;
     --family1: 'Playfair Display SC', serif;
     --family2: 'Raleway', sans-serif;
+    --family3: "Poppins", sans-serif;
 }
 *{
     margin: 0;
@@ -90,7 +91,7 @@ nav hr{
 .hero-section{
     /* background-color: var(--primary_color);
     color: var(--extra_3); */
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("../images/hero-image.jpg");
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("../images/hero-image1.jpg");
     background-size: cover;
     padding-bottom: 0 !important;
     /* height: 48vh; */
@@ -133,7 +134,7 @@ nav hr{
 
 /* About */
 .sec-heading{
-    font-family: var(--family1);
+    font-family: var(--family3);
     /* color: var(--secondary_color); */
     font-weight: 700;
     text-align: center;
@@ -180,7 +181,7 @@ nav hr{
     align-items: center;
 }
 .tech-stack h3, .project h3{
-    font-family: var(--family1); 
+    font-family: var(--family2); 
 }
 .tech{
     width: 35%;

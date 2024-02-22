@@ -253,7 +253,7 @@ nav hr{
     border-radius: 3px;
 }
 
-.card-content h4, .card-content p, .btns a{
+.card-content h4, .card-content ul, .btns a{
     font-family: var(--family2);
 }
 
@@ -767,9 +767,10 @@ nav hr{
         row-gap: 18px;
     }
     .tech{
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
         /* background-color: #b1dfd9; */
         padding: 20px 30px;
+        box-shadow: 0px 0px 7px 1px #cdc7c7;
     }
     .tech img{
         width: 40%;

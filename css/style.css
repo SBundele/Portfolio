@@ -91,7 +91,7 @@ nav hr{
 .hero-section{
     /* background-color: var(--primary_color);
     color: var(--extra_3); */
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4)), url("../images/hero-image1.jpg");
+    background: url("../images/hero-image1.jpg"), linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.4));
     background-size: cover;
     padding-bottom: 0 !important;
     /* height: 48vh; */
